@@ -40,8 +40,8 @@ const Navbar = () => {
             dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
           >
             <Link
-              className={`py-3 transition-all flex items-center gap-3 ${
-                pathName === "/" && "text-xl font-bold transition-all"
+              className={`py-3 transition-all flex items-center gap-3 text-neutral-500 ${
+                pathName === "/" && "text-xl font-bold transition-all text-neutral-800"
               }`}
               href={"/"}
             >
@@ -50,8 +50,8 @@ const Navbar = () => {
             </Link>
 
             <Link
-              className={`py-3 transition-all flex items-center gap-3 ${
-                pathName === "/carts" && "text-xl font-bold transition-all"
+              className={`py-3 transition-all flex items-center gap-3 text-neutral-500 ${
+                pathName === "/carts" && "text-xl font-bold transition-all text-neutral-800"
               } `}
               href={"/carts"}
             >
