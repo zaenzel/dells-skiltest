@@ -8,7 +8,7 @@ export const getProduct = async (skip = 0, search = "") => {
       const res = await axios.get(
         `${api_base_url}/products/search?q=${search}`,
         {
-          cache: "force-cache",
+          cache: "no-store",
         }
       );
 
@@ -17,14 +17,14 @@ export const getProduct = async (skip = 0, search = "") => {
     // const res = await axios.get(
     //   `${api_base_url}/products/search?q=${search}&skip=${skip}&?limit=10`,
     //   {
-    //     cache: "force-cache",
+    //     cache: "no-store",
     //   }
     // );
 
     const res = await axios.get(
       `${api_base_url}/products?limit=10&skip=${skip}`,
       {
-        cache: "force-cache",
+        cache: "no-store",
       }
     );
 
@@ -37,7 +37,7 @@ export const getProduct = async (skip = 0, search = "") => {
 export const getDetailProduct = async (id) => {
   try {
     const res = await axios.get(`${api_base_url}/products/${id}`, {
-      cache: "force-cache",
+      cache: "no-store",
     });
     return res;
   } catch (error) {
@@ -48,7 +48,7 @@ export const getDetailProduct = async (id) => {
 export const getCart = async (skip = 0) => {
   try {
     const res = await axios.get(`${api_base_url}/carts?limit=10&skip=${skip}`, {
-      cache: "force-cache",
+      cache: "no-store",
     });
     return res;
   } catch (error) {
@@ -59,7 +59,7 @@ export const getCart = async (skip = 0) => {
 export const getCartDetail = async (id) => {
   try {
     const res = await axios.get(`${api_base_url}/carts/${id}`, {
-      cache: "force-cache",
+      cache: "no-store",
     });
     return res;
   } catch (error) {

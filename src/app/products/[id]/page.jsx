@@ -1,5 +1,4 @@
-// 'use client'
-"use client";
+'use client'
 import CustomCarousel from "@/components/carousel/CustomCarousel";
 import { getDetailProduct } from "@/utils/api";
 import React from "react";
